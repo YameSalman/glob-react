@@ -23,6 +23,10 @@ export const NewsContextProvider = ({ children }) => {
     const isDuplicate = FavoriteList.some((item) => item.url === newItem.url);
     if (!isDuplicate) {
       setFavoriteList([...FavoriteList, newItem]);
+      localStorage.setItem(
+        "FavoriteList",
+        JSON.stringify([...FavoriteList, newItem])
+      );
     }
   };
   const removeFromFavorites = (urlToRemove) => {
@@ -33,6 +37,7 @@ export const NewsContextProvider = ({ children }) => {
       const updatedList = [...FavoriteList];
       updatedList.splice(indexToRemove, 1);
       setFavoriteList(updatedList);
+      localStorage.setItem("FavoriteList", JSON.stringify(updatedList));
     }
   };
 
@@ -95,6 +100,7 @@ export const NewsContextProvider = ({ children }) => {
         addToFavorites,
         removeFromFavorites,
         listIndex,
+        setFavoriteList,
       }}
     >
       {children}

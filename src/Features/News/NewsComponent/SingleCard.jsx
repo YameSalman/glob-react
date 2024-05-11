@@ -37,7 +37,9 @@ function SingleCard({ item }) {
         </div>
         <div className="w-full h-[35%] flex flex-col text-xs md:text-sm lg:text-base xl:text-lg">
           <span className="text-[14px] font-bold">{item.title}</span>
-          <span className="text-[12px]">{item.description}</span>
+          <span className="text-[12px] overflow-hidden">
+            {item.description}
+          </span>
         </div>
       </a>
     </div>

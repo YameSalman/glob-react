@@ -3,7 +3,9 @@ import UltraEndpoints from "../../Serves/AxiosHandler/AxiosEndPoints";
 
 let instance = null;
 class NewsService {
-  static apiKey = "d0380fca8de8409a8f944640852ce786";
+  //"6510db02e5f24401b3c97e5f8f9f72d6";
+  //"d0380fca8de8409a8f944640852ce786"
+  static apiKey = "6510db02e5f24401b3c97e5f8f9f72d6";
   constructor() {
     // Ensure only one instance is created
     if (!instance) {

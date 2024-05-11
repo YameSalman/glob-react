@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
 import { styles } from "./MainPageCSS";
 import { Link } from "react-router-dom";
+import { newsContext } from "../News/NewsContext";
 
 const MainPageView = () => {
+  const { setFavoriteList } = useContext(newsContext);
+  useEffect(() => {
+    const x = localStorage.getItem("FavoriteList");
+    setFavoriteList(JSON.parse(x));
+  }, []);
   return (
     <div style={styles.mainStyle}>
       <div class="flex items-center justify-center h-screen w-screen gap-[10%]">

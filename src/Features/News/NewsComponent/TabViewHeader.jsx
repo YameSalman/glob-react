@@ -68,7 +68,14 @@ function TabViewHead() {
         } text-[24px] font-[500]`}
       >
         Favorites Page
-        <FontAwesomeIcon icon={faHeart} />
+        <div className="relative">
+          <FontAwesomeIcon icon={faHeart} />
+          {FavoriteList.length > 0 && (
+            <div className="absolute flex justify-center items-center -right-2 top-1 px-[6px] rounded-full bg-red-500 text-[14px] text-white">
+              {FavoriteList.length}
+            </div>
+          )}
+        </div>
       </Link>
     </div>
   );

@@ -12,14 +12,14 @@ export const styles = {
   },
   weatherStyle: {
     backgroundImage:
-      "linear-gradient(to right, rgba(4, 3, 3, 0.9), rgba(10, 8, 69, 0.9), rgba(49, 8, 92, 0.9), rgba(61, 3, 126, 0.9))",
+      "linear-gradient(to right, rgba(4, 3, 3, 0.7), rgba(10, 8, 69, 0.7), rgba(49, 8, 92, 0.7), rgba(61, 3, 126, 0.7))",
     backgroundSize: "cover",
     backgroundPosition: "center",
     transition: "background-image 0.5s ease-in-out",
   },
   newsStyle: {
     backgroundImage:
-      "linear-gradient(to right, rgba(4, 3, 3, 0.9), rgba(10, 8, 69, 0.9), rgba(49, 8, 92, 0.9), rgba(61, 3, 126, 0.9))",
+      "linear-gradient(to right, rgba(4, 3, 3, 0.7), rgba(10, 8, 69, 0.7), rgba(49, 8, 92, 0.7), rgba(61, 3, 126, 0.7))",
     backgroundSize: "cover",
     backgroundPosition: "center",
     transition: "background-image 0.5s ease-in-out",
