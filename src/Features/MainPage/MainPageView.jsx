@@ -7,7 +7,7 @@ const MainPageView = () => {
   const { setFavoriteList } = useContext(newsContext);
   useEffect(() => {
     const x = localStorage.getItem("FavoriteList");
-    setFavoriteList(JSON.parse(x));
+    setFavoriteList(JSON.parse(x) ?? []);
   }, []);
   return (
     <div style={styles.mainStyle}>
